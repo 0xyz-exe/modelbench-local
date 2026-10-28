@@ -1,0 +1,19 @@
+version: '3.8'
+
+services:
+  modelbench:
+    build: .
+    container_name: modelbench-local
+    ports:
+      - "8000:8000"
+    volumes:
+      - modelbench_data:/app/data
+    environment:
+      - HOST=0.0.0.0
+      - PORT=8000
+      - DATABASE_URL=sqlite:////app/data/modelbench.db
+      - OLLAMA_BASE_URL=http://host.docker.internal:11434
+    restart: unless-stopped
+
+volumes:
+  modelbench_data:
