@@ -49,6 +49,7 @@ Non-invasive real-time sampling of host CPU utilization, virtual RAM consumption
 | Metric / Attribute | Specification |
 |---|---|
 | **Repository Name** | `modelbench-local` |
+| **Description** | Local-first AI model benchmarking, evaluation & hardware profiling platform |
 | **Owner / Maintainer** | [`0xyz-exe`](https://github.com/0xyz-exe) |
 | **Repository URL** | [https://github.com/0xyz-exe/modelbench-local](https://github.com/0xyz-exe/modelbench-local) |
 | **Visibility** | Public (Open Source) |
@@ -56,12 +57,18 @@ Non-invasive real-time sampling of host CPU utilization, virtual RAM consumption
 | **Default Branch** | `main` |
 | **Backend Stack** | Python 3.11+ (`FastAPI`, `Pydantic v2`, `httpx`, `psutil`, `pytest`) |
 | **Frontend Stack** | React 19, TypeScript 5.7+, Vite 6, Tailwind CSS v4, Lucide React |
-| **Database Engine** | SQLite3 with Write-Ahead Logging (WAL) and foreign keys |
+| **Inference Adapters** | Ollama, llama.cpp / llama-server, OpenAI-compatible local APIs, Mock test runner |
+| **Quality Evaluators** | Exact Match, Normalized Match, JSON Schema validator, Rule/Keyword Rubrics |
+| **Supported OS** | Windows 10/11, Linux (x86_64 / aarch64), macOS (Apple Silicon / Intel) |
+| **Database Engine** | SQLite3 with Write-Ahead Logging (WAL) and foreign key constraints |
+| **Continuous Integration**| GitHub Actions CI (`.github/workflows/ci.yml`) |
 | **Clone (HTTPS)** | `git clone https://github.com/0xyz-exe/modelbench-local.git` |
 | **Clone (SSH)** | `git clone git@github.com:0xyz-exe/modelbench-local.git` |
+| **Clone (GitHub CLI)** | `gh repo clone 0xyz-exe/modelbench-local` |
 | **Issues & Requests** | [https://github.com/0xyz-exe/modelbench-local/issues](https://github.com/0xyz-exe/modelbench-local/issues) |
 | **Pull Requests** | [https://github.com/0xyz-exe/modelbench-local/pulls](https://github.com/0xyz-exe/modelbench-local/pulls) |
 | **Security Reporting** | [SECURITY.md](SECURITY.md) |
+| **Contributing Guide** | [CONTRIBUTING.md](CONTRIBUTING.md) |
 
 ---
 
